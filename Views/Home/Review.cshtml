@@ -1,0 +1,11 @@
+
+
+@{
+    foreach(var review in @ViewBag.AllReviews){
+        System.Console.WriteLine(review);
+        <h3> Review for: @review.RestaurantName  @review.Stars star</h3>
+        <p> Reviewer: @review.Name, @review.VisitedDate.ToString("MMM dd, yyyy")</p> 
+        <p>@review.Review</p>
+        <hr>
+    }
+}
